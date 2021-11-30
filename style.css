@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+*{
+  box-sizing:border-box;
+}
+
+
+body{
+  background-color:#d9534f;
+  color:white;
+  font-weight:700;
+  font-family: "Lato", sans-serif;
+}
+
+
+h1{
+  font-size:30px;
+  margin:10px;
+  margin-bottom:50px;
+}
+
+.dual-container{
+
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  width:620px;
+  margin:auto;
+  justify-content:center;
+  align-items:center;
+}
+
+.time-sets{
+
+  display: grid;
+  grid-template-columns :50px 200px 50px;
+  justify-items: center;
+  align-items: center;
+
+  
+}
+
+
+.SessionTime{
+  color:white;
+  display:inline-block;
+  width:310px;
+  height:310px;
+  border-radius:50%;
+  border:6px solid white;
+  border:6px solid white;
+}
+
+.timer{
+  display:inline-block;
+  margin-top:50%;
+  transform:translate(0, -50%);
+  
+}
+
+.SessionTime h3{
+  display:inline-block;
+  font-size:20px;
+  padding:0;
+  margin:0;
+}
+
+.SessionTime h1{
+  margin:0;
+  padding:0;
+  display:block;
+  font-size:50px;
+}
+
+.buttons{
+  margin-top:10px;
+}
+.btn-large{
+  box-shadow:none;
+  background-color:transparent;
+  margin:5px;
+  transition:0.1s;
+}
+
+.btn-large:hover{
+  background-color:transparent;
+  box-shadow:none;
+}
+
+.btn-large:active, .btn-large:focus {
+  outline: 0;
+  
+}
+
+
+.renew{
+  display:inline;
+  border-radius:50%;
+  padding:10px;
+  border:4px solid rgba(255,255,255,0.3);
+  transition:0.1s;
+}
+
+.play{
+  display:inline;
+  border-radius:50%;
+  padding:20px;
+  border:4px solid rgb(255,255,255);
+  transition:0.1s;
+}
+
+.pause{
+  display:inline;
+  border-radius:50%;
+  padding:20px;
+  border:4px solid rgb(255,255,255);
+  transition:0.1s;
+}
+
+.pause:hover{
+  border:5px solid white;
+  transition:0.1s;
+}
+
+.play:hover{
+  border:5px solid white;
+  transition:0.21;
+}
+
+.renew:hover{
+  border:5px solid white;
+  transition:0.1s;
+}
+
+.change-time h3{
+  font-size:30px;
+  
+}
+
+.btn-small {
+  box-shadow:none;
+  background-color:transparent;
+  margin:5px;
+  transition:0.1s;
+  outline:none;
+}
+
+.btn-small:hover{
+  background-color:transparent;
+  box-shadow:none;
+}
+
+.btn-small:active, .btn-small:focus {
+  outline: 0;
+}
+
+
+.btn-small i{
+  width:38px;
+  border-radius:50%;
+  border:4px solid rgba(255,255,255,0.3);
+  transition:0.1s;
+}
+
+.btn-small i:hover{
+  border:3px solid white;
+  transition:0.1s;
+}
+
+
+@media (max-width: 650px){
+  
+  .dual-container{
+  display:grid;
+  grid-template-columns: 4fr;
+  width:310px;
+  margin:auto;
+  justify-content:center;
+  align-items:center;
+  padding:10px;
+  }
+  
+  .change-time{
+    margin-top:80px;
+  }
+
+}
